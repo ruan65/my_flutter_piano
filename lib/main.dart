@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_midi/flutter_midi.dart';
+import 'package:tonic/tonic.dart';
 
 const BorderRadiusGeometry borderRadius = BorderRadius.only(
     bottomLeft: Radius.circular(10.0), bottomRight: Radius.circular(10.0));
@@ -51,15 +52,17 @@ class _MyAppState extends State<MyApp> {
             return SafeArea(
               child: Stack(
                 children: <Widget>[
-                  Row(children: <Widget>[
-                  _buildKey(24 + i, false),
-                  _buildKey(26 + i, false),
-                  _buildKey(28 + i, false),
-                  _buildKey(29 + i, false),
-                  _buildKey(31 + i, false),
-                  _buildKey(33 + i, false),
-                  _buildKey(35 + i, false),
-                  ],),
+                  Row(
+                    children: <Widget>[
+                      _buildKey(24 + i, false),
+                      _buildKey(26 + i, false),
+                      _buildKey(28 + i, false),
+                      _buildKey(29 + i, false),
+                      _buildKey(31 + i, false),
+                      _buildKey(33 + i, false),
+                      _buildKey(35 + i, false),
+                    ],
+                  ),
                   Positioned(
                     left: 0,
                     right: 0,
@@ -89,24 +92,59 @@ class _MyAppState extends State<MyApp> {
     );
   }
 
-  _buildKey(int midi, bool accidental) {
+  _buildKey(int midi, bool accidental, {Color color = Colors.white}) {
+    final pitchName = Pitch.fromMidiNumber(midi).toString();
+
+    final pianoKey = Stack(
+      children: <Widget>[
+        Semantics(
+          button: true,
+          hint: pitchName,
+          child: Material(
+            borderRadius: borderRadius,
+            color: accidental ? Colors.black : Colors.white,
+            child: InkWell(
+              borderRadius: borderRadius,
+              highlightColor: Colors.grey,
+              onTap: () {},
+              onTapDown: (_) => FlutterMidi.playMidiNote(midi: midi),
+            ),
+          ),
+        ),
+        Positioned(
+          left: 0,
+          right: 0,
+          bottom: 20,
+          child: _showLabels
+              ? Text(
+                  pitchName,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: !accidental ? Colors.black : Colors.white),
+                )
+              : Container(),
+        ),
+      ],
+    );
+
     if (accidental) {
       return Container(
         width: keyWidth,
-        color: Colors.black,
         margin: EdgeInsets.symmetric(horizontal: 2),
         padding: EdgeInsets.symmetric(horizontal: keyWidth * .1),
         child: Material(
+          color: Colors.purple,
           elevation: 6.0,
           borderRadius: borderRadius,
           shadowColor: Color(0x802196f3),
+          child: pianoKey,
         ),
       );
     }
     return Container(
       width: keyWidth,
-      color: Colors.white,
       margin: EdgeInsets.symmetric(horizontal: 2),
+      child: pianoKey,
     );
   }
 }
