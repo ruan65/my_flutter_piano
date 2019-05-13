@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/a/dev/MyProjs/andreyka_piano/build/ios/Debug-iphoneos/flutter_midi/flutter_midi.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/a/dev/MyProjs/andreyka_piano/ios/DerivedDataBuild/Runner/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/flutter_midi.build/unextended-module.modulemap',
+    }]
+  }]
+}

@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Runner/GeneratedPluginRegistrant.m \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Runner/GeneratedPluginRegistrant.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Modules/module.modulemap \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterViewController.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/a/dev/MyProjs/andreyka_piano/ios/Pods/../.symlinks/flutter/ios/Flutter.framework/Headers/Flutter.h \
+  /Users/a/dev/MyProjs/andreyka_piano/build/ios/Debug-iphoneos/flutter_midi/flutter_midi.framework/Modules/module.modulemap \
+  /Users/a/dev/MyProjs/andreyka_piano/build/ios/Debug-iphoneos/flutter_midi/flutter_midi.framework/Headers/flutter_midi-Swift.h \
+  /Users/a/dev/MyProjs/andreyka_piano/build/ios/Debug-iphoneos/flutter_midi/flutter_midi.framework/Headers/FlutterMidiPlugin.h \
+  /Users/a/dev/MyProjs/andreyka_piano/build/ios/Debug-iphoneos/flutter_midi/flutter_midi.framework/Headers/flutter_midi-umbrella.h \
+  /Users/a/dev/MyProjs/andreyka_piano/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Modules/module.modulemap \
+  /Users/a/dev/MyProjs/andreyka_piano/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Headers/PathProviderPlugin.h \
+  /Users/a/dev/MyProjs/andreyka_piano/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Headers/path_provider-umbrella.h
