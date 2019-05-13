@@ -39,7 +39,33 @@ class _MyAppState extends State<MyApp> {
         drawer: Drawer(
           child: SafeArea(
             child: ListView(
-              children: <Widget>[],
+              controller: ScrollController(initialScrollOffset: 1500),
+              children: <Widget>[
+                Container(
+                  height: 20,
+                ),
+                ListTile(
+                  title: Text('Change Width'),
+                ),
+                Slider(
+                  activeColor: Colors.redAccent,
+                  inactiveColor: Colors.white,
+                  min: 0,
+                  max: 1,
+                  value: _widthRatio,
+                  onChanged: (double value) => setState(() {
+                    _widthRatio = value;
+                  }),
+                ),
+                Divider(),
+                ListTile(
+                    title: Text('Show Labels'),
+                    trailing: Switch(
+                        value: _showLabels,
+                        onChanged: (bool show) =>
+                            setState(() => _showLabels = show))),
+                Divider(),
+              ],
             ),
           ),
         ),
